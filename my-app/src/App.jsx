@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 
 export const App = () => {
+	let date = new Date().getFullYear(); // Императивный стиль: создаем объект Date и получаем из него текующий год
 	return (
 		<div className="App">
 			<header className="App-header">
@@ -17,6 +18,9 @@ export const App = () => {
 				>
 					Learn React
 				</a>
+				<span>{date}</span>
+				{/* Декларативный стиль: описываем, что хотим отрисовать
+				на экране  */}
 			</header>
 		</div>
 	);
